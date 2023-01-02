@@ -1,7 +1,7 @@
 # fastapi_ws
 Fast API WS + BroadCaster + Docker Example
 
-![화면_기록_2023-01-02_오후_11_34_20_AdobeExpress (1)](https://user-images.githubusercontent.com/16227780/210246017-4a464f6a-a1d5-4bf8-9932-12ec78916360.gif)
+![화면_기록_2023-01-02_오후_11_34_20_AdobeExpress (2)](https://user-images.githubusercontent.com/16227780/210246428-3617bf8a-85bf-4260-b70c-ca61502cc881.gif)
 
 
 ### client tool

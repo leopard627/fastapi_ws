@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  theres_chat:
+    image: fastapi_ws:0.0.1
+    build:
+      context: .
+    environment:
+      # DATABASE_CONFIG: "${DATABASE_CONFIG}" 
+      # S3_PREFIX: "${S3_PREFIX}"
+      REDIS_URL: "${REDIS_URL}"
+
+    ports:
+      - 80:8000
+      - 443:8000
+
+    links:
+      - redis:redis
+
+  redis:
+    image: redis:6.2.1
+    container_name: theres_redis_dev
+    command: redis-server --port 6379
+    restart: always
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+
+    ports:
+      - 6379:6379
+    expose:
+      - "6379"

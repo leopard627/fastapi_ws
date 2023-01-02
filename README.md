@@ -1,2 +1,2 @@
-# fast_api_ws
+# fastapi_ws
 Fast API WS + BroadCaster + Docker Example

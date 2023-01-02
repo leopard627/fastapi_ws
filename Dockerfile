@@ -9,7 +9,6 @@ RUN apt-get update && \
   postgresql postgresql-contrib \
   build-essential \
   libpq-dev gcc \
-  gdal-bin \
   git \
   nginx \
   supervisor \
@@ -24,9 +23,6 @@ RUN apt install -y python3.11-distutils \
   python3-dev \
   python3-pip \
   libpython3.11-dev
-
-ENV CPLUS_INCLUDE_PATH=/usr/include/gdal
-ENV C_INCLUDE_PATH=/usr/include/gdal
 
 WORKDIR /project
 
